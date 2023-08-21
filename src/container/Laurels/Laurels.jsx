@@ -1,4 +1,5 @@
 import { SubHeading, MenuItem } from '../../components';
+import BlurryLazyLoad from '../../components/BlurryLazyLoad/BlurryLazyLoad';
 import { data, images } from '../../constants';
 
 import './Laurels.css';
@@ -24,8 +25,9 @@ const Laurels = () => (
       </div>
     </div>
 
-    <div className="app__wrapper_img">
-      <img src={images.laurels} alt="laurels_img" />
+    <div className="app__wrapper_img blur__load" loading='lazy' style={{backgroundImage: `url(${images.welcomeSmall})` }} >
+      <img src={images.laurels} alt="laurels_img" loading='lazy' style={{  objectFit: 'cover', objectPosition: 'center'}}/>
+      < BlurryLazyLoad />
     </div>
   </div>
 );

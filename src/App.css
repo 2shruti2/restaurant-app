@@ -9,7 +9,7 @@
 }
 
 .app__bg {
-  background: url('./assets/bg.png');
+  background: url('./assets/bg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -39,8 +39,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
+
+  aspect-ratio: 1/1;
 }
 
 .app__wrapper_img-reverse {
@@ -49,7 +50,7 @@
 }
 
 .app__wrapper_img img {
-  width: 80%;
+  width: 100%;
 }
 
 .custom__button {
@@ -174,4 +175,19 @@
     font-size: 45px;
     line-height: 70px;
   }
+}
+
+.blur__load{
+  background-size: cover;
+  background-position: center;
+
+}
+
+.blur__load.loaded > img {
+  opacity: 1;
+}
+
+.blur__load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
 }

@@ -1,8 +1,9 @@
 import {images} from '../../constants'
 import { SubHeading } from '../../components'
+import BlurryLazyLoad from '../../components/BlurryLazyLoad/BlurryLazyLoad';
 
 const FindUs = () => (
-  <div className='app__wrapper app__bg section__padding'>
+  <div className='app__wrapper app__bg section__padding' id='contact'>
     <div className='app__wrapper_info'>
       <SubHeading title='Contact Us'/>
       <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Find Us</h1>
@@ -14,8 +15,9 @@ const FindUs = () => (
       </div>
     </div>
 
-    <div className='app__wrapper_img'>
-      <img src={images.findus} alt='findus'/>
+    <div className='app__wrapper_img blur__load' loading='lazy' style={{backgroundImage: `url(${images.findusSmall})` }} >
+      <img src={images.findus} loading='lazy' alt='findus' style={{  objectFit: 'cover', objectPosition: 'center'}}/>
+      < BlurryLazyLoad />
     </div>
   </div>
 );

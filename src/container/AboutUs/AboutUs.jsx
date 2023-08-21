@@ -1,4 +1,5 @@
 import {images} from '../../constants'
+import BlurryLazyLoad from '../../components/BlurryLazyLoad/BlurryLazyLoad';
 
 import './AboutUs.css';
 
@@ -16,8 +17,9 @@ const AboutUs = () => (
         <button type='button' className=''>Know More</button>
       </div>
 
-      <div className='app__aboutus-content_knife flex__center'> 
-        <img src={images.knife} alt='knife'/>
+      <div className='app__aboutus-content_knife flex__center blur__load' loading='lazy' style={{backgroundImage: `url(${images.knifeSmall})` }} > 
+       <img src={images.knife} alt='knife' loading='lazy' style={{  objectFit: 'cover', objectPosition: 'center'}} />
+       <BlurryLazyLoad />
       </div>
 
       <div className="app__aboutus-content_history">

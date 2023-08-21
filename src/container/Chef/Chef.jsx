@@ -2,11 +2,13 @@ import {images} from '../../constants'
 import { SubHeading } from '../../components';
 
 import './Chef.css';
+import BlurryLazyLoad from '../../components/BlurryLazyLoad/BlurryLazyLoad';
 
 const Chef = () => (
   <div className='app__bg app__wrapper section-__padding'>
-    <div className='app__wrapper_img app__wrapper_img-reverse'>
-      <img src={images.chef} alt='chef'/>
+    <div className='app__wrapper_img app__wrapper_img-reverse blur__load' loading='lazy' style={{backgroundImage: `url(${images.chefSmall})` }} >
+      <img src={images.chef} alt='chef' loading='lazy' style={{  objectFit: 'cover', objectPosition: 'center'}}/>
+      < BlurryLazyLoad />
     </div>
 
     <div className='app__wrapper_info'>
@@ -14,8 +16,8 @@ const Chef = () => (
       <h1 className='headtext__cormorant'> What We Believe In </h1>
 
       <div className='app__chef-content'>
-        <div className='app__chef-content_quote'>
-          <img src={images.quote} alt='quote'/> 
+        <div className='app__chef-content_quote' >
+          <img src={images.quote} alt='quote' loading='lazy' /> 
           <p className='p__opensans'> Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
         </div>
 

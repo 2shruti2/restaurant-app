@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constants/images'
@@ -8,10 +8,31 @@ import './Navbar.css';
 
 const Navbar = () => {
 
-  const[toggleMenu, setToggleMenu] = useState(false);
+  const [ isfixed, setIsfixed] = useState(false); // for fixed top
+
+  const navbarRef = useRef();
+
+  useEffect(()=>{
+    const handleScroll = () => {
+      if (window.scrollY >= navbarRef.current.clientHeight) {
+        setIsfixed(true);
+      } else {
+        setIsfixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return() =>{
+      window.removeEventListener('scroll', handleScroll);
+    }
+
+  }, [] );
+
+  const[toggleMenu, setToggleMenu] = useState(false);  // for toggle in responsive
 
   return(
-    <nav className='app__navbar'>
+    <nav className={`navbar ${isfixed ? 'fixed' : ''} app__navbar`} ref={navbarRef}>
     <div className='app__navbar-logo'>
       <img src={images.gericht} alt='app logo'/>
     </div>

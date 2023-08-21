@@ -1,4 +1,5 @@
 import { SubHeading, MenuItem } from '../../components';
+import BlurryLazyLoad from '../../components/BlurryLazyLoad/BlurryLazyLoad';
 import { data, images } from '../../constants';
 import './SpecialMenu.css';
 
@@ -19,8 +20,9 @@ const SpecialMenu = () => (
         </div>
       </div>
 
-      <div className="app__specialMenu-menu_img">
-        <img src={images.menu} alt="menu__img" />
+      <div className="app__specialMenu-menu_img blur__load" loading='lazy' style={{backgroundImage: `url(${images.menuSmallSmall})` }} > 
+        <img src={images.menu} alt="menu__img" loading='lazy' style={{  objectFit: 'cover', objectPosition: 'center'}} />
+        <BlurryLazyLoad />
       </div>
 
       <div className="app__specialMenu-menu_cocktails  flex__center">
