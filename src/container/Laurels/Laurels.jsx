@@ -25,7 +25,7 @@ const Laurels = () => (
       </div>
     </div>
 
-    <div className="app__wrapper_img blur__load" loading='lazy' style={{backgroundImage: `url(${images.welcomeSmall})` }} >
+    <div className="app__wrapper_img blur__load" loading='lazy' style={{backgroundImage: `url(${images.laurelsSmall})` }} >
       <img src={images.laurels} alt="laurels_img" loading='lazy' style={{  objectFit: 'cover', objectPosition: 'center'}}/>
       < BlurryLazyLoad />
     </div>
