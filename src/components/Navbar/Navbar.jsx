@@ -34,7 +34,7 @@ const Navbar = () => {
   return(
     <nav className={`navbar ${isfixed ? 'fixed' : ''} app__navbar`} ref={navbarRef}>
     <div className='app__navbar-logo'>
-      <img src={images.gericht} alt='app logo'/>
+      <a href='/'> <img src={images.gericht} alt='app logo'/> </a>
     </div>
     <ul className='app__navbar-links'>
       <li className='p__opensans'><a href='#home'>Home</a> </li>
