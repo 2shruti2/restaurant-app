@@ -1,7 +1,7 @@
 import { images } from '../../constants';
 import { SubHeading } from '../../components';
 
-const GalleryPage04 = () => {
+const Productpage04 = () => {
   return (
     <div>
     <div className="app__gallery flex__center " style={{backgroundImage: `url(${images.food})`, backgroundSize: 'cover',paddingBottom: '15%',paddingTop: '15%'}}>
@@ -22,4 +22,4 @@ const GalleryPage04 = () => {
   )
 }
 
-export default GalleryPage04
+export default Productpage04

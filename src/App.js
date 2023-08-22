@@ -3,18 +3,17 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet,
-  Link
+  Outlet
 } from "react-router-dom";
 
 import Home  from './pages/Home/Home'
 import {  Footer } from './container';
 import { Navbar } from './components';
 import './App.css';
-import GalleryPage01 from './pages/Gallery/GalleryPage01';
-import GalleryPage02 from './pages/Gallery/GalleryPage02';
-import GalleryPage03 from './pages/Gallery/GalleryPage03';
-import GalleryPage04 from './pages/Gallery/GalleryPage04';
+import Productpage01 from './pages/Products/Productpage01';
+import Productpage02 from './pages/Products/Productpage02';
+import Productpage03 from './pages/Products/Productpage03';
+import Productpage04 from './pages/Products/Productpage04';
 
 const Layout = () =>{
   return(
@@ -36,20 +35,20 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:'/gallerypage01',
-        element:<GalleryPage01/>
+        path:'/productpage-01',
+        element:<Productpage01/>
+      },
+      {  
+      path:'/productpage-02',
+        element:<Productpage02/>
       },
       {
-        path:'/gallerypage02',
-        element:<GalleryPage02/>
+        path:'/productpage-03',
+        element:<Productpage03/>
       },
       {
-        path:'/gallerypage03',
-        element:<GalleryPage03/>
-      },
-      {
-        path:'/gallerypage04',
-        element:<GalleryPage04/>
+        path:'/productpage-04',
+        element:<Productpage04/>
       }
     ]
   }

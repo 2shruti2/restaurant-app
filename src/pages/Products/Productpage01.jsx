@@ -3,7 +3,7 @@ import { images } from '../../constants';
 import { SubHeading } from '../../components';
 import {BsInstagram } from 'react-icons/bs'
 
-const GalleryPage = () => {
+const productpage01 = () => {
 
   return (
     <div>
@@ -31,4 +31,4 @@ const GalleryPage = () => {
   )
 }
 
-export default GalleryPage
+export default productpage01

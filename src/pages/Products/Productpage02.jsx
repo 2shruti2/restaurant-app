@@ -2,7 +2,7 @@ import { images } from '../../constants';
 import { SubHeading } from '../../components';
 import {BsInstagram } from 'react-icons/bs';
 
-const GalleryPage02 = () => {
+const productpage02 = () => {
   return (
     <div>
     <div className="app__gallery flex__center " style={{backgroundImage: `url(${images.restaurant})` , backgroundSize: 'cover', paddingBottom: '15%',paddingTop: '15%'}}>
@@ -17,17 +17,18 @@ const GalleryPage02 = () => {
         
         <img src={images.gallery02} alt='breakfast'/>
         <BsInstagram className="gallery__image-icon" />
-    </div>
-
 
     </div>
 
+
     </div>
 
+    </div>
+    
     <div style={{width:'100%', height:'20px', backgroundColor: 'var(--color-black)' , padding:'5%'}}></div>
 
     </div>
   )
 }
 
-export default GalleryPage02
+export default productpage02

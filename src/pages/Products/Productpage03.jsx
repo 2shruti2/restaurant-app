@@ -2,7 +2,7 @@ import { images } from '../../constants';
 import { SubHeading } from '../../components';
 
 
-const GalleryPage03 = () => {
+const Productpage03 = () => {
   return (
     <div>
     <div className="app__gallery flex__center " style={{backgroundImage: `url(${images.wine})` , backgroundSize: 'cover', paddingBottom: '15%',paddingTop: '15%'}}>
@@ -23,4 +23,4 @@ const GalleryPage03 = () => {
   )
 }
 
-export default GalleryPage03
+export default Productpage03
