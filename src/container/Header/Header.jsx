@@ -11,7 +11,7 @@ const Header = () => (
     <div className="app__wrapper_info">
       <SubHeading title="Chase the new flavour" />
       <h1 className="app__header-h1">The Key To Fine Dining</h1>
-      <p className="p__opensans" style={{ margin: '2rem 0' }}>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+      <p className="p__opensans" style={{ margin: '2rem 0' }}>Discover a world of refined dining at Gericht, where every meal is an orchestrated masterpiece, meticulously crafted to delight your senses. </p>
       <button type="button" className="custom__button">Explore Menu</button>
     </div>
 

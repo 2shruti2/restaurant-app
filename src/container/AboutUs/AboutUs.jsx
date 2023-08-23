@@ -13,7 +13,7 @@ const AboutUs = () => (
       <div className='app__aboutus-content_about'>
         <h1 className='headtext__cormorant'>About Us</h1>
         <img src={images.spoon} alt='spoon img' className='spoon__img'/>
-        <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <p className="p__opensans">Gericht's evolution is an ongoing journey. Our dedication to pushing culinary boundaries and our unwavering commitment to guest satisfaction continue to shape our identity. We are a canvas for culinary expression and a platform for artistic creativity.</p>
         <button type='button' className='custom__button'>Know More</button>
       </div>
 
@@ -25,7 +25,7 @@ const AboutUs = () => (
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        <p className="p__opensans">As we celebrate our history and continue to write our culinary story, we invite you to join us on this journey. Whether you're a first-time guest or a loyal patron, you are an integral part of Gericht's legacy. Let us create memorable moments together.</p>
         <button type="button" className="custom__button">Know More</button>
       </div>
 
