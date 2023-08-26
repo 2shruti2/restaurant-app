@@ -2,7 +2,7 @@
 
 live: https://restaurant-app-2shruti2.vercel.app
 
-technologies used: React.js , CSS
+technologies used: React.js , react-router-dom , CSS
 
 Key Learnings
 
