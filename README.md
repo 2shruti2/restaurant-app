@@ -8,4 +8,4 @@ Key Learnings
 
 1.React Fundamentals
 
-2.Lazy Loading
+2.Blurry Lazy Loading Images
